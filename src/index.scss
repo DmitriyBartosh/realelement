@@ -33,6 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #333333;
   line-height: 1.6;
+  min-width: 320px;
   &::-webkit-scrollbar {
     width:0px;
   }
@@ -54,6 +55,12 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
+section{
+  @media only screen and (min-width: 992px){
+    max-height: 1150px;
+  }
+}
+
 .serviceDetail{
   position: relative;
   display: flex;
@@ -61,6 +68,23 @@ h1, h2, h3, h4, h5, h6{
   justify-content: center;
   height: 100vh;
   min-height: 600px;
+  .header{
+    &Bottom{
+      @media only screen and (max-width: 600px){
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 10;
+      }
+      a{
+        @media only screen and (max-width: 600px){
+          background-color: white;
+          padding: 10px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 992px){
     align-items: flex-start;
     justify-content: flex-start;

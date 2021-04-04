@@ -9,15 +9,15 @@ function CallbackForm() {
       <form method="POST">
         <div className="formInput">
           <div className="formGroup">
-            <label for="name"></label>
+            <label htmlFor="name"></label>
             <input type="text" placeholder="Введите имя" name="name" required></input>
           </div>
           <div className="formGroup">
-            <label for="phone"></label>
+            <label htmlFor="phone"></label>
             <input type="text" placeholder="Введите телефон" name="phone" required></input>
           </div>
           <div className="formGroup">
-            <label for="message"></label>
+            <label htmlFor="message"></label>
             <textarea placeholder="Ваш вопрос" name="message" maxLength="200" rows="1" wrap="off"></textarea>
           </div>
         </div>

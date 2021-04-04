@@ -1,3 +1,6 @@
+section.serviceDetail{
+  max-height: 100vh;
+}
 .detailContainer{
   position: relative;
   display: flex;
@@ -6,7 +9,11 @@
   margin: 40px 40px 50px 100px;
   width: 100%;
   height: calc(100vh - 90px);
-  min-height: 510px;
+  min-height: 645px;
+  @media only screen and (min-height: 1300px){
+    margin: 10vh 20px 20vh 20px;
+    height: 70vh;
+  }
   @media only screen and (max-width: 996px){
     flex-direction: column;
     align-items: flex-start;
@@ -15,11 +22,7 @@
     margin: 70px 20px;
     width: calc(100% - 40px);
   }
-  @media only screen and (max-width: 600px){
-    margin: 70px 10px;
-    width: calc(100% - 20px);
-  }
-  .title{
+  .detailTitle{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -29,8 +32,6 @@
     height: 100%;
     @media only screen and (max-width: 996px){
       width: 100%;
-    }
-    @media only screen and (max-width: 600px){
       flex-direction: row;
       justify-content: space-between;
     }
@@ -41,6 +42,7 @@
       margin-bottom: 50px;
       @media only screen and (max-width: 1200px){
         margin-bottom: 20px;
+        margin-top: 70px;
       }
     }
     .detailImage1{
@@ -56,8 +58,8 @@
       }
       @media only screen and (max-width: 996px){
         margin-top: 50px;
-        width: 50vw;
-        height: 200px;
+        width: 60vw;
+        height: 250px;
       }
       img{
         position: absolute;
@@ -76,12 +78,8 @@
       width: 30%;
     }
     @media only screen and (max-width: 996px){
-      top: -70px;
+      top: -50px;
       width: 100%;
-    }
-    @media only screen and (max-width: 600px){
-      top: -100px;
-      width: 180px;
     }
     h4{
       font-size: 1.25rem;
@@ -138,6 +136,7 @@
       width: 45%;
     }
     @media only screen and (max-width: 996px){
+      top: -50px;
       width: 100%;
       height: 400px;
     }
@@ -184,6 +183,63 @@
         height: 50%;
         bottom: 30px;
         right: 35px;
+      }
+    }
+  }
+}
+
+.detailMobContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+  .detailTitle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    padding: 10px 30px 45px 30px;
+    width: calc(100% - 60px);
+    border-radius: 10px;
+    color: white;
+    background-color: #6600ff;
+    background-image: url(../../assets/texture/wave.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h4{
+      margin: 0;
+    }
+    .callbackButton{
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      display: flex;
+      align-items: center;
+      text-transform: lowercase;
+      font-size: 1.15rem;
+      img{
+        height: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .rightImage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    column-gap: 5px;
+    row-gap: 5px;
+    .detailImage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      overflow: hidden;
+      img{
+        height: 105%;
       }
     }
   }

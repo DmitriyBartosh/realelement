@@ -11,9 +11,10 @@
     height: 650px;
     min-height: auto;
   }
-  @media only screen and (max-width: 992px){
+  @media only screen and (max-width: 600px){
     height: 100vh;
-    min-height: auto;
+    min-height: 600px;
+    max-height: 900px;
   }
   &Title{
   display: flex;
@@ -42,8 +43,8 @@
       line-height: 3rem;
     }
     @media only screen and (max-width: 600px){
-      font-size: 1.5rem;
-      line-height: 2rem;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
     }
     span{
       display: block;
@@ -59,6 +60,7 @@
     .borderText{
       text-shadow: #333333 1px 0px, #333333 1px 1px, #333333 0px 1px, #333333 -1px 1px, #333333 -1px 0px, #333333 -1px -1px, #333333 0px -1px, #333333 1px -1px;
       color: white;
+      letter-spacing: 1px;
     }
   }
   }

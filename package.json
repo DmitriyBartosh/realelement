@@ -1,7 +1,7 @@
 {
   "name": "realelement",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "http://realelement.ru/",
   "repository": {
     "type": "git",
     "url": "git@github.com:DmitriyBartosh/realelement.git"
@@ -16,6 +16,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.0.0",
+    "react-media": "^1.10.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",

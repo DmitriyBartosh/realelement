@@ -13,7 +13,7 @@
     height: 600px;
     min-height: auto;
   }
-  @media only screen and (max-width: 992px){
+  @media only screen and (max-width: 600px){
     height: 100%;
   }
   &Top{
@@ -26,17 +26,18 @@
       margin: 20px;
     }
     .logo{
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
       @media only screen and (max-width: 992px){
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
       }
     }
     .phone{
       text-decoration: none;
       font-weight: 600;
       color: black;
+      font-size: 1.15rem;
     }
   }
   &Bottom{
@@ -45,17 +46,23 @@
     align-items: center;
     margin: 70px 100px;
     @media only screen and (max-width: 992px){
-      margin: 20px;
+      justify-content: center;
+      margin: 30px 0px;
     }
     a{
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 1.5rem;
+      height: 25px;
       padding: 5px;
       margin-left: 20px;
       z-index: 10;
+      @media only screen and (max-width: 600px){
+        margin: 10px;
+        padding: 10px;
+        height: 20px;
+      }
       img{
         height: 100%;
       }

@@ -26,26 +26,26 @@ function ServiceSection() {
         <img src={cinnabon} alt="Вывеска синнабон" className="cinnabon"/>
       </div>
 
-      <Link to="/design" className="serviceBlock whiteBack">
-        <h2>Дизайн и полиграфия</h2>
+      <Link to="/promotion" className="serviceBlock blackBack">
+        <h2>Наружная реклама</h2>
         <p>
-          Дизайн баннеров<br/>
-          Дизайн визиток и флаеров<br/>
-          Логотип и фирменный стиль
+          Информационные стенды<br/>
+          Вывески<br/>
+          Световые короба
         </p>
-        <p className="detail blue">Подробнее<img src={arrowBlue} alt="arrow blue"/></p>
+        <p className="detail">Подробнее<img src={arrow} alt="arrow"/></p>
       </Link>
 
-      <Link to="/model" className="serviceBlock blackBack">
+      <Link to="/model" className="serviceBlock whiteBack">
         <h2>Макет и муляжи</h2>
         <p>
           Архитектурные макеты, муляжи<br/>
           Сувенирная продукция
         </p>
-        <p className="detail">Подробнее<img src={arrow} alt="arrow"/></p>
+        <p className="detail blue">Подробнее<img src={arrowBlue} alt="arrow blue"/></p>
       </Link>
 
-      <Link to="/machine" className="serviceBlock whiteBack">
+      <Link to="/machine" className="serviceBlock blackBack">
         <h2>ЧПУ станок</h2>
         <p>
           3D и 2D обработка<br/>
@@ -53,15 +53,15 @@ function ServiceSection() {
           Раскрой листовых материалов<br/>
           и любых пород дерева
         </p>
-        <p className="detail blue">Подробнее<img src={arrowBlue} alt="arrow"/></p>
+        <p className="detail">Подробнее<img src={arrow} alt="arrow"/></p>
       </Link>
 
-      <Link to="/promotion" className="serviceBlock whiteBack">
-        <h2>Наружная реклама</h2>
+      <Link to="/design" className="serviceBlock whiteBack">
+        <h2>Дизайн и полиграфия</h2>
         <p>
-          Информационные стенды<br/>
-          Вывески<br/>
-          Световые короба
+          Дизайн баннеров<br/>
+          Дизайн визиток и флаеров<br/>
+          Логотип и фирменный стиль
         </p>
         <p className="detail blue">Подробнее<img src={arrowBlue} alt="arrow blue"/></p>
       </Link>
