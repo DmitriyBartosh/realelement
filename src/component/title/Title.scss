@@ -1,0 +1,68 @@
+.title{
+  h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin: 0;
+    @media only screen and (max-width: 1200px){
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    @media only screen and (max-width: 992px){
+      font-size: 2.75rem;
+      line-height: 2.75rem;
+    }
+    @media only screen and (max-width: 600px){
+      font-size: 2rem;
+      line-height: 2.25rem;
+    }
+    @media only screen and (max-width: 370px){
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+  }
+  &Border{
+    text-shadow: #333333 1px 0px, #333333 1px 1px, #333333 0px 1px, #333333 -1px 1px, #333333 -1px 0px, #333333 -1px -1px, #333333 0px -1px, #333333 1px -1px;
+    color: white;
+  }
+  &Blue{
+    color: #6600ff;
+  }
+  &Footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__callback{
+      position: relative;
+      background-color: #6600ff;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 16px 30px;
+      border-radius: 30px;
+      margin: 0;
+      margin-right: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      z-index: 20;
+      @media only screen and (max-width: 1200px){
+        padding: 14px 20px;
+        margin-right: 14px;
+      }
+      @media only screen and (max-width: 992px){
+        font-size: 0.75rem;
+        padding: 8px 10px;
+        margin-right: 8px;
+      }
+      @media only screen and (max-width: 600px){
+        position: absolute;
+        font-size: 1rem;
+        bottom: -5rem;
+        padding: 10px 40px;
+        left: calc(50% - 74px);
+        margin-right: 0px;
+      }
+    }
+  }
+}

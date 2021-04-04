@@ -1,0 +1,65 @@
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 650px;
+  overflow: hidden;
+  @media only screen and (max-width: 992px){
+    height: 650px;
+    min-height: auto;
+  }
+  @media only screen and (max-width: 992px){
+    height: 100vh;
+    min-height: auto;
+  }
+  &Title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0px;
+  h2{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 5rem;
+    width: 3000px;
+    width: max-content;
+    margin: 0;
+    @media only screen and (max-width: 1400px){
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    @media only screen and (max-width: 1200px){
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+    @media only screen and (max-width: 996px){
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+    @media only screen and (max-width: 600px){
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    span{
+      display: block;
+      margin: 0 10px;
+      @media only screen and (max-width: 600px){
+        margin: 0 2px;
+        letter-spacing: 0.5px;
+      }
+    }
+    .blue{
+      color: #6600ff;
+    }
+    .borderText{
+      text-shadow: #333333 1px 0px, #333333 1px 1px, #333333 0px 1px, #333333 -1px 1px, #333333 -1px 0px, #333333 -1px -1px, #333333 0px -1px, #333333 1px -1px;
+      color: white;
+    }
+  }
+  }
+}

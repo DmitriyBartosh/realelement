@@ -1,0 +1,16 @@
+.mainSection{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 550px;
+  @media only screen and (max-width: 992px){
+    height: 600px;
+    min-height: auto;
+  }
+  @media only screen and (max-width: 992px){
+    height: 100vh;
+
+  }
+}

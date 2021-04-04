@@ -1,0 +1,70 @@
+@font-face{
+  font-family: 'Roboto-regular'; 
+	src: url(./assets/font/Roboto.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'WebnarBold'; 
+	src: url(./assets/font/WebnarBold.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html{
+  font-size: 16px;
+  @media only screen and (max-width: 1200px){
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 992px){
+    font-size: 14.5px;
+  }
+  @media only screen and (max-width: 600px){
+    font-size: 12px;
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Roboto-regular', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+  line-height: 1.6;
+  &::-webkit-scrollbar {
+    width:0px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'WebnarBold'; 
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  @media only screen and (min-width: 993px){
+    width: 70%;
+  }
+  @media only screen and (min-width: 601px){
+    width: 85%;
+  }
+}
+
+.serviceDetail{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 600px;
+  @media only screen and (max-width: 992px){
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    min-height: auto;
+  }
+}

@@ -1,0 +1,135 @@
+.service{
+  position: relative;
+  display: grid;
+  height: 100vh;
+  min-height: 700px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  @media only screen and (max-width: 1400px){
+    min-height: 800px;
+  }
+  @media only screen and (max-width: 1200px){
+    min-height: 700px;
+  }
+  @media only screen and (max-width: 992px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    height: auto;
+    min-height: auto;
+  }
+  @media only screen and (max-width: 600px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 280px);
+  }
+  @media only screen and (max-width: 370px){
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 225px);
+  }
+  .mainBack{
+    background-color: #6600ff;
+    background-image: url('../../assets/texture/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .logo{
+      width: 70px;
+    }
+  }
+  .imgBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .cinnabon{
+      position: absolute;
+      width: 105%;
+      transition: width .3s;
+      &:hover{
+        width: 100%;
+      }
+    }
+    .model{
+      position: absolute;
+      height: 105%;
+      transition: height .3s;
+      &:hover{
+        height: 100%;
+      }
+    }
+    @media only screen and (max-width: 600px){
+      display: none !important;
+    }
+  }
+  .whiteBack{
+    background-color: white;
+    color: #333333;
+    transition: all .3s;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+  .blackBack{
+    background-color: #333333;
+    color: white;
+    transition: all .3s;
+    &:hover{
+      background-color: rgba(15, 15, 15, 0.8);
+    }
+  }
+  .mobBlue{
+    @media only screen and (max-width: 600px){
+      background-color: #6600ff;
+      color: white;
+    }
+  }
+  .mobBlack{
+    @media only screen and (max-width: 600px){
+      background-color:#333333;
+      color: white;
+    }
+  }
+  .mobWhite{
+    @media only screen and (max-width: 600px){
+      background-color: white;
+      color: #333333;
+    }
+  }
+  .serviceBlock{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-row: span 1;
+    grid-column: span 1;
+    overflow: hidden;
+    padding: 50px;
+    text-decoration: none;
+    @media only screen and (max-width: 1400px){
+      padding: 30px;
+    }
+    @media only screen and (max-width: 600px){
+      padding: 15px;
+    }
+    .detail{
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-transform: lowercase;
+      font-weight: 600;
+      @media only screen and (max-width: 1400px){
+        bottom: 30px;
+        right: 30px;
+      }
+      img{
+        width: 16px;
+        margin-left: 10px;
+      }
+    }
+    .detail.blue{
+      color: #6600ff;
+    }
+  }
+}
