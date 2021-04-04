@@ -2,6 +2,10 @@
   "name": "realelement",
   "version": "0.1.0",
   "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DmitriyBartosh/realelement.git"
+  },
   "author": "Dmitriy Bartosh",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
