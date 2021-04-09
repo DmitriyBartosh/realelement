@@ -4,7 +4,9 @@ import ServiceSection from '../component/serviceSection/ServiceSection'
 import PartnerSection from '../component/partnerSection/PartnerSection'
 import CallbackSection from '../component/callbackSection/CallbackSection'
 
-function main() {
+function Main() {
+
+
   return (
     <>
     <MainSection />
@@ -15,4 +17,4 @@ function main() {
   )
 }
 
-export default main
+export default Main

@@ -2,6 +2,7 @@ import React from 'react'
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 
 import Main from '../pages/Main'
+
 import Interior from '../pages/Interior'
 import Design from '../pages/Design'
 import Machine from '../pages/Machine'

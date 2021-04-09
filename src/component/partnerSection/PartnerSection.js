@@ -8,8 +8,8 @@ import partner4 from '../../assets/partners/cinnabon.png'
 import partner5 from '../../assets/partners/SFU.svg'
 import partner6 from '../../assets/partners/dorc.png'
 import partner7 from '../../assets/partners/sushiwok.png'
-import partner8 from '../../assets/partners/partner-sibcem.png'
-import partner9 from '../../assets/partners/toyota.png'
+import partner8 from '../../assets/partners/toyota.png'
+import partner9 from '../../assets/partners/partner-sibcem.png'
 
 function PartnerSection() {
   return (
@@ -23,8 +23,8 @@ function PartnerSection() {
         <img src={partner5} alt="Логотип СФУ"/>
         <img src={partner6} alt="Логотип Дорц"/>
         <img src={partner7} alt="Логотип СушиWok"/>
-        <img src={partner8} alt="Логотип Сибирский цемент"/>
-        <img src={partner9} alt="Логотип Toyota"/>
+        <img src={partner8} alt="Логотип Toyota"/>
+        <img src={partner9} alt="Логотип Сибирский цемент"/>
       </div>
     </section>
   )

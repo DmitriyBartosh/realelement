@@ -17,8 +17,8 @@
       line-height: 2.75rem;
     }
     @media only screen and (max-width: 600px){
-      font-size: 2.25rem;
-      line-height: 2.5rem;
+      font-size: 2.15rem;
+      line-height: 2.25rem;
     }
     @media only screen and (max-width: 350px){
       font-size: 1.75rem;
@@ -42,9 +42,9 @@
       position: relative;
       background-color: #6600ff;
       color: white;
-      text-transform: uppercase;
+      text-transform: lowercase;
       letter-spacing: 1px;
-      padding: 16px 30px;
+      padding: 16px 36px;
       border-radius: 30px;
       margin: 0;
       margin-right: 30px;
@@ -52,12 +52,12 @@
       cursor: pointer;
       z-index: 20;
       @media only screen and (max-width: 1200px){
-        padding: 14px 20px;
+        padding: 14px 25px;
         margin-right: 14px;
       }
       @media only screen and (max-width: 992px){
-        font-size: 0.75rem;
-        padding: 8px 10px;
+        font-size: 0.8rem;
+        padding: 8px 12px;
         margin-right: 8px;
       }
       @media only screen and (max-width: 600px){
