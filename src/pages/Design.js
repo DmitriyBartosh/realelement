@@ -9,6 +9,25 @@ import img2 from '../assets/content/design/1.jpg'
 import img3 from '../assets/content/design/2.jpg'
 import img4 from '../assets/content/design/3.jpg'
 
+const images = [
+  {
+    url: img1,
+    alt: 'I am Studio'
+  },
+  {
+    url: img2,
+    alt: 'excel'
+  },
+  {
+    url: img3,
+    alt: 'print'
+  },
+  {
+    url: img4,
+    alt: 'beer base'
+  },
+]
+
 function Design() {
   const { pathhame } = useLocation();
 
@@ -28,14 +47,7 @@ function Design() {
         <p>Индивидуальный дизайн<br/>Уникальные анимации<br/>3D презентация продукта</p>
         </>
         }
-        img1={img1}
-        altImg1="I am Studio"
-        img2={img2}
-        altImg2="excel"
-        img3={img3}
-        altImg3="print"
-        img4={img4}
-        altImg4="beer base"
+        images={images}
       />
     </section>
   )

@@ -80,10 +80,12 @@ export const Description = {
 
 export const photoTitle = {
   in: {
+    opacity: 1,
     y: 0
   }, 
   out: {
-    y: '-110%'
+    opacity: 0,
+    y: -20
   },
   transition: {
     delay: 0.4,
@@ -93,10 +95,12 @@ export const photoTitle = {
 
 export const photoOne = {
   in: {
+    opacity: 1,
     y: 0
   }, 
   out: {
-    y: '-110%'
+    opacity: 0,
+    y: -20
   },
   transition: {
     delay: 0.5,
@@ -106,10 +110,12 @@ export const photoOne = {
 
 export const photoTwo = {
   in: {
+    opacity: 1,
     y: 0
   }, 
   out: {
-    y: '-110%'
+    opacity: 0,
+    y: -20
   },
   transition: {
     delay: 0.6,
@@ -119,10 +125,12 @@ export const photoTwo = {
 
 export const photoThree = {
   in: {
+    opacity: 1,
     y: 0
   }, 
   out: {
-    y: '-110%'
+    opacity: 0,
+    y: -20
   },
   transition: {
     delay: 0.7,

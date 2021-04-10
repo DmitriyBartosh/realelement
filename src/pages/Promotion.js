@@ -8,6 +8,25 @@ import img2 from '../assets/content/promotion/3.jpg'
 import img3 from '../assets/content/promotion/4.jpg'
 import img4 from '../assets/content/promotion/2.jpg'
 
+const images = [
+  {
+    url: img1,
+    alt: 'Вывеска синабон'
+  },
+  {
+    url: img2,
+    alt: 'Вывеска Кроха плюс'
+  },
+  {
+    url: img3,
+    alt: 'Вывеска AYTACH'
+  },
+  {
+    url: img4,
+    alt: 'Вывеска Evolvers'
+  },
+]
+
 function Promotion() {
   const { pathhame } = useLocation();
 
@@ -27,14 +46,7 @@ function Promotion() {
         <p>Вывеска по вашему бюджету<br/>От искизов проекта до монтажа<br/>Бесплатный выезд специалиста по Красноярску</p>
         </>
         }
-        img1={img1}
-        altImg1="Вывеска синабон"
-        img2={img2}
-        altImg2="Вывеска Кроха плюс"
-        img3={img3}
-        altImg3="Вывеска AYTACH"
-        img4={img4}
-        altImg4="Вывеска Evolvers"
+        images={images}
       />
     </div>
   )

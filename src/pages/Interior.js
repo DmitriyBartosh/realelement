@@ -8,6 +8,25 @@ import img2 from '../assets/content/interior/3.jpg'
 import img3 from '../assets/content/interior/4.jpg'
 import img4 from '../assets/content/interior/2.jpg'
 
+const images = [
+  {
+    url: img1,
+    alt: 'Стул на чпу'
+  },
+  {
+    url: img2,
+    alt: 'Иньерьер'
+  },
+  {
+    url: img3,
+    alt: 'Светильник на чпу'
+  },
+  {
+    url: img4,
+    alt: 'Интерьер на чпу'
+  },
+]
+
 function Interior() {
   const { pathhame } = useLocation();
 
@@ -24,14 +43,7 @@ function Interior() {
         desc={
         <p>Параметрика<br/>Лофт<br/>Проектирование и реализация интерьеров музеев, выставок</p>
         }
-        img1={img1}
-        altImg1="Стул на чпу"
-        img2={img2}
-        altImg2="Иньерьер"
-        img3={img3}
-        altImg3="Светильник на чпу"
-        img4={img4}
-        altImg4="Интерьер на чпу"
+        images={images}
       />
     </div>
   )

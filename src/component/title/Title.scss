@@ -37,7 +37,8 @@
     position: relative;
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
+    width: 100%;
     &__callback{
       position: relative;
       background-color: #6600ff;
@@ -47,18 +48,15 @@
       padding: 16px 36px;
       border-radius: 30px;
       margin: 0;
-      margin-right: 30px;
       font-size: 1rem;
       cursor: pointer;
       z-index: 20;
       @media only screen and (max-width: 1200px){
         padding: 14px 25px;
-        margin-right: 14px;
       }
       @media only screen and (max-width: 992px){
         font-size: 0.8rem;
         padding: 8px 12px;
-        margin-right: 8px;
       }
       @media only screen and (max-width: 600px){
         position: absolute;

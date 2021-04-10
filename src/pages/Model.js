@@ -8,6 +8,25 @@ import img2 from '../assets/content/model/3.jpg'
 import img3 from '../assets/content/model/4.jpg'
 import img4 from '../assets/content/model/2.jpg'
 
+const images = [
+  {
+    url: img1,
+    alt: 'Макет полезных ископаемых красноярского края'
+  },
+  {
+    url: img2,
+    alt: 'Макет жилого комплекса'
+  },
+  {
+    url: img3,
+    alt: 'Макет авто-центра'
+  },
+  {
+    url: img4,
+    alt: 'Макет завода'
+  },
+]
+
 function Model() {
   const { pathhame } = useLocation();
 
@@ -27,14 +46,7 @@ function Model() {
         <p>Изготовление любой сложности архитектурных, рельефных макетов<br/>Оцифровка объектов культурных наследий в 3D</p>
         </>
         }
-        img1={img1}
-        altImg1="Макет полезных ископаемых красноярского края"
-        img2={img2}
-        altImg2="Макет жилого комплекса"
-        img3={img3}
-        altImg3="Макет авто-центра"
-        img4={img4}
-        altImg4="Макет завода"
+        images={images}
       />
     </div>
   )

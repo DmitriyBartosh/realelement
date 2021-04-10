@@ -8,6 +8,25 @@ import img2 from '../assets/content/machine/3.jpg'
 import img3 from '../assets/content/machine/2.jpg'
 import img4 from '../assets/content/machine/4.jpg'
 
+const images = [
+  {
+    url: img1,
+    alt: 'Вывеска Love'
+  },
+  {
+    url: img2,
+    alt: 'Раскрой листовых материалов'
+  },
+  {
+    url: img3,
+    alt: 'Вырезка на дереве'
+  },
+  {
+    url: img4,
+    alt: 'Узор на чпу станке'
+  },
+]
+
 function Machine() {
   const { pathhame } = useLocation();
 
@@ -24,14 +43,7 @@ function Machine() {
         desc={
         <p>3D и 2D обработка (вырезка любых узоров)<br/>Раскрой листовых материалов и любых пород дерева</p>
         }
-        img1={img1}
-        altImg1="Вывеска Love"
-        img2={img2}
-        altImg2="Раскрой листовых материалов"
-        img3={img3}
-        altImg3="Вырезка на дереве"
-        img4={img4}
-        altImg4="Узор на чпу станке"
+        images={images}
       />
     </div>
   )

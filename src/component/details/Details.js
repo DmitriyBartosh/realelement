@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Media from 'react-media';
 import ModalForm from '../modalForm/ModalForm'
 import './Details.scss'
@@ -9,7 +9,17 @@ import arrow from '../../assets/icon/arrow.svg'
 
 function Details(props) {
   const [showModal, setShowModal] = useState(false);
-  const [Id, setId] = useState(null);
+
+  const images = props.images;
+  const listPhoto = images.map((image) =>
+    <motion.div 
+      variants={item} 
+      transition={item.transition} 
+      className="detailImage"
+    >
+      <img src={image.url} alt={image.alt}/>
+    </motion.div>
+  );
 
   return (
     <>
@@ -37,8 +47,8 @@ function Details(props) {
               animate="in"
               initial="out"
               transition={photoTitle.transition}
-              src={props.img1} 
-              alt={props.altImg1}/>
+              src={images[0].url} 
+              alt={images[0].alt}/>
             </div>
           </div>
           <motion.div 
@@ -58,8 +68,8 @@ function Details(props) {
               animate="in"
               initial="out"
               transition={photoOne.transition}
-              src={props.img2} 
-              alt={props.altImg2}
+              src={images[1].url} 
+              alt={images[1].alt}
               />
             </div>
             <div className="detailImage3">
@@ -68,8 +78,8 @@ function Details(props) {
               animate="in"
               initial="out"
               transition={photoTwo.transition}
-              src={props.img3} 
-              alt={props.altImg3}
+              src={images[2].url} 
+              alt={images[2].alt}
               />
             </div>
             <div className="detailImage4">
@@ -78,14 +88,13 @@ function Details(props) {
               animate="in"
               initial="out"
               transition={photoThree.transition}
-              src={props.img4} 
-              alt={props.altImg4}
+              src={images[3].url}
+              alt={images[3].alt}
               />
             </div>
           </div>
         </div>
         :
-        <AnimateSharedLayout type="crossfade">
         <div className="detailMobContainer">
           <motion.div 
             variants={buttonDetail}
@@ -107,115 +116,11 @@ function Details(props) {
             className="rightImage"
           >
 
-            <motion.div
-              variants={item}
-              transition={item.transition} 
-              className="detailImage"
-              layoutId={1}
-              onClick={() => setId(1)}
-            >
-              <motion.img src={props.img1} alt={props.altImg1}/>
-            </motion.div>
-
-            <motion.div 
-              variants={item} 
-              transition={item.transition} 
-              className="detailImage"
-              layoutId={2}
-              onClick={() => setId(2)}
-              >
-              <img src={props.img2} alt={props.altImg2}/>
-            </motion.div>
-
-            <motion.div 
-              variants={item} 
-              transition={item.transition} 
-              className="detailImage"
-              layoutId={3}
-              onClick={() => setId(3)}
-            >
-              <img src={props.img3} alt={props.altImg3}/>
-            </motion.div>
-
-            <motion.div 
-              variants={item} 
-              transition={item.transition} 
-              className="detailImage"
-              layoutId={4}
-              onClick={() => setId(4)}
-            >
-              <img src={props.img4} alt={props.altImg4}/>
-            </motion.div>
+          {listPhoto}
 
           </motion.div>
-
-
-          <AnimatePresence>
-          {Id === 1 && (
-              <motion.div 
-                variants={item} 
-                transition={item.transition} 
-                onClick={() => setId(null)} 
-                layoutId={Id} 
-                className="photoContainer">
-                <motion.img 
-                  src={props.img1} 
-                  alt={props.altImg1}
-                />
-                </motion.div>
-          )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-          {Id === 2 && (
-              <motion.div 
-                variants={item} 
-                transition={item.transition} 
-                onClick={() => setId(null)} 
-                layoutId={Id} 
-                className="photoContainer">
-                <motion.img 
-                  src={props.img2} 
-                  alt={props.altImg2}
-                />
-                </motion.div>
-          )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-          {Id === 3 && (
-              <motion.div 
-                variants={item} 
-                transition={item.transition} 
-                onClick={() => setId(null)} 
-                layoutId={Id} 
-                className="photoContainer">
-                <motion.img 
-                  src={props.img3} 
-                  alt={props.altImg3}
-                />
-                </motion.div>
-          )}
-          </AnimatePresence>
-
-          <AnimatePresence>
-          {Id === 4 && (
-              <motion.div 
-                variants={item} 
-                transition={item.transition} 
-                onClick={() => setId(null)} 
-                layoutId={Id} 
-                className="photoContainer">
-                <motion.img 
-                  src={props.img4} 
-                  alt={props.altImg4}
-                />
-                </motion.div>
-          )}
-          </AnimatePresence>
-      
+     
         </div>
-        </AnimateSharedLayout>
       }}
     </Media>
     </>
