@@ -22,7 +22,7 @@
   }
   @media only screen and (max-width: 600px){
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 225px);
+    grid-template-rows: repeat(6, 250px);
   }
   .mainBack{
     background-color: #6600ff;
@@ -102,6 +102,9 @@
     overflow: hidden;
     padding: 50px;
     text-decoration: none;
+    h2{
+      margin-bottom: 0px;
+    }
     @media only screen and (max-width: 1400px){
       padding: 30px;
     }

@@ -7,6 +7,12 @@ import img1 from '../assets/content/interior/1.jpg'
 import img2 from '../assets/content/interior/3.jpg'
 import img3 from '../assets/content/interior/4.jpg'
 import img4 from '../assets/content/interior/2.jpg'
+import img5 from '../assets/content/interior/5.JPG'
+import img6 from '../assets/content/interior/6.JPG'
+import img7 from '../assets/content/interior/7.JPG'
+import img8 from '../assets/content/interior/8.JPG'
+import img9 from '../assets/content/interior/9.JPG'
+import img10 from '../assets/content/interior/10.JPG'
 
 const images = [
   {
@@ -24,6 +30,30 @@ const images = [
   {
     url: img4,
     alt: 'Интерьер на чпу'
+  },
+  {
+    url: img5,
+    alt: 'Coffee in'
+  },
+  {
+    url: img6,
+    alt: 'Стол на ЧПУ'
+  },
+  {
+    url: img7,
+    alt: 'Стул на чпу'
+  },
+  {
+    url: img8,
+    alt: 'Лампа'
+  },
+  {
+    url: img9,
+    alt: 'Стенд'
+  },
+  {
+    url: img10,
+    alt: 'Полка'
   },
 ]
 

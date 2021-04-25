@@ -7,6 +7,10 @@ import img1 from '../assets/content/machine/1.jpg'
 import img2 from '../assets/content/machine/3.jpg'
 import img3 from '../assets/content/machine/2.jpg'
 import img4 from '../assets/content/machine/4.jpg'
+import img5 from '../assets/content/machine/5.jpg'
+import img6 from '../assets/content/machine/6.jpg'
+import img7 from '../assets/content/machine/7.jpg'
+import img8 from '../assets/content/machine/8.jpg'
 
 const images = [
   {
@@ -25,6 +29,22 @@ const images = [
     url: img4,
     alt: 'Узор на чпу станке'
   },
+  {
+    url: img5,
+    alt: 'Музей'
+  },
+  {
+    url: img6,
+    alt: 'Гитара'
+  },
+  {
+    url: img7,
+    alt: 'Авто'
+  },
+  {
+    url: img8,
+    alt: 'Столбы в 3D'
+  },
 ]
 
 function Machine() {
@@ -38,8 +58,8 @@ function Machine() {
     <div className="serviceDetail">
       <Header />
       <Details 
-        title="ЧПУ станок"
-        callbackHeader="Заказать 3D обработку"
+        title="3D и ЧПУ резка"
+        callbackHeader="Заказать 3D и ЧПУ резка"
         desc={
         <p>3D и 2D обработка (вырезка любых узоров)<br/>Раскрой листовых материалов и любых пород дерева</p>
         }

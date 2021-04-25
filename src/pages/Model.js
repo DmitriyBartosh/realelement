@@ -7,6 +7,10 @@ import img1 from '../assets/content/model/1.jpg'
 import img2 from '../assets/content/model/3.jpg'
 import img3 from '../assets/content/model/4.jpg'
 import img4 from '../assets/content/model/2.jpg'
+import img5 from '../assets/content/model/5.JPG'
+import img6 from '../assets/content/model/6.JPG'
+import img7 from '../assets/content/model/7.JPG'
+import img8 from '../assets/content/model/8.JPG'
 
 const images = [
   {
@@ -24,6 +28,22 @@ const images = [
   {
     url: img4,
     alt: 'Макет завода'
+  },
+  {
+    url: img5,
+    alt: 'Макет для аэропорта'
+  },
+  {
+    url: img6,
+    alt: 'Макет полезное ископаемое'
+  },
+  {
+    url: img7,
+    alt: 'Макет здания'
+  },
+  {
+    url: img8,
+    alt: 'Макет острова'
   },
 ]
 

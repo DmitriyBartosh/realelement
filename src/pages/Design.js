@@ -8,6 +8,10 @@ import img1 from '../assets/content/design/4.jpg'
 import img2 from '../assets/content/design/1.jpg'
 import img3 from '../assets/content/design/2.jpg'
 import img4 from '../assets/content/design/3.jpg'
+import img5 from '../assets/content/design/5.jpg'
+import img6 from '../assets/content/design/6.jpg'
+import img7 from '../assets/content/design/7.jpg'
+import img8 from '../assets/content/design/8.jpg'
 
 const images = [
   {
@@ -25,6 +29,22 @@ const images = [
   {
     url: img4,
     alt: 'beer base'
+  },
+  {
+    url: img5,
+    alt: 'Type me'
+  },
+  {
+    url: img6,
+    alt: 'Atlas'
+  },
+  {
+    url: img7,
+    alt: 'МузЭйшен'
+  },
+  {
+    url: img8,
+    alt: 'Меню'
   },
 ]
 

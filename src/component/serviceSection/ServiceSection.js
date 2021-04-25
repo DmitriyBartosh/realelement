@@ -18,7 +18,7 @@ function ServiceSection() {
         <p>
         Более 20 лет стажа<br/>
         Высокотехнологичные материалы<br/>
-        Современное оборудование
+        Cовременное оборудование и технологии
         </p>
       </div>
 
@@ -36,17 +36,18 @@ function ServiceSection() {
         <p className="detail">Подробнее<img src={arrow} alt="arrow"/></p>
       </Link>
 
-      <Link to="/model" className="serviceBlock whiteBack">
-        <h2>Макет и муляжи</h2>
+      <Link to="/design" className="serviceBlock whiteBack">
+        <h2>Дизайн и полиграфия</h2>
         <p>
-          Архитектурные макеты, муляжи<br/>
-          Сувенирная продукция
+          Дизайн баннеров<br/>
+          Дизайн визиток и флаеров<br/>
+          Логотип и фирменный стиль
         </p>
         <p className="detail blue">Подробнее<img src={arrowBlue} alt="arrow blue"/></p>
       </Link>
 
       <Link to="/machine" className="serviceBlock blackBack">
-        <h2>ЧПУ станок</h2>
+        <h2>3D и ЧПУ резка</h2>
         <p>
           3D и 2D обработка<br/>
           (вырезка любых узоров)<br/>
@@ -56,12 +57,11 @@ function ServiceSection() {
         <p className="detail">Подробнее<img src={arrow} alt="arrow"/></p>
       </Link>
 
-      <Link to="/design" className="serviceBlock whiteBack">
-        <h2>Дизайн и полиграфия</h2>
+      <Link to="/model" className="serviceBlock whiteBack">
+        <h2>Макеты и муляжи</h2>
         <p>
-          Дизайн баннеров<br/>
-          Дизайн визиток и флаеров<br/>
-          Логотип и фирменный стиль
+          Архитектурные макеты, муляжи<br/>
+          Сувенирная продукция
         </p>
         <p className="detail blue">Подробнее<img src={arrowBlue} alt="arrow blue"/></p>
       </Link>
