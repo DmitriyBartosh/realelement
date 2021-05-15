@@ -17,7 +17,7 @@ function Contact() {
         <a href="https://www.instagram.com/realelement24/" target="_blank" rel="noreferrer">
           <img src={instagram} alt="Логотип инстаграм"/>
         </a>
-        <a href="https://tlgg.ru/9504184299" target="_blank" rel="noreferrer">
+        <a href="https://tlgg.ru/@klisakov" target="_blank" rel="noreferrer">
           <img src={telegram} alt="Логотип телеграм"/>
         </a>
         <a href="https://wa.me/+79504184299" target="_blank" rel="noreferrer">

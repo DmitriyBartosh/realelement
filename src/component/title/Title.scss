@@ -1,7 +1,6 @@
 .title{
   @media only screen and (max-width: 600px){
     position: relative;
-    bottom: 50px;
     padding: 0px 20px;
     width: 100%;
   }
@@ -37,6 +36,7 @@
   }
   &Footer__callback{
       position: relative;
+      display: block;
       background-color: #6600ff;
       color: white;
       text-transform: lowercase;
@@ -56,8 +56,8 @@
         margin-top: 40px;
         padding: 10px 30px;
         width: 180px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        margin-right: auto;
+        margin-left: auto;
       }
     }
 }
